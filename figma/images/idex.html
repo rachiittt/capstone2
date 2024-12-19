@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Staatliches&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+
+
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 0%;
+  margin: 0%;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: solid black 1px;
+  transition: color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  border-bottom:1px solid white;
+}
+nav ul li:hover {
+  color: rgb(34, 153, 84); 
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transform: scale(1.05);
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+.left {
+  font-family: "Staatliches", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin: 0 20px;
+  letter-spacing: -1.68px;
+  
+}
+ul {
+  font-family: "Red Hat Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+.title {
+  font-family: "Red Hat Display", serif;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 120px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 3rem;
+}
+#home {
+  padding: 96px 48px;
+}
+#bimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: black solid 1px;
+  transition: transform 0.3s ease-in-out;
+}
+#bimg:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+  width: 100%;
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: Fill (1,344px)px;
+  height: Hug (1,333px)px;
+  opacity: 0px;
+  gap: 50px;
+
+
+  
+}
+.child {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+.child:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 15px rgba(255, 0, 0, 0.15);
+}
+
+.cnt1 img{
+  border: 1px black solid;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 0;
+}
+
+.cnt1 {
+  display: grid;
+  width: Fill (416px)px;
+  height: Hug (1,237px)px;
+  gap: 48px;
+  opacity: 0px;
+}
+.left{
+  width: 50%;
+
+}
+
+
+.des:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+  ul{
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 0;
+    margin-left: 0%;
+  }
+  .container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .title{
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100%;
+    padding-top: 0%;
+  }
+  .des{
+    font-size: 20px;
+    padding: 10px 10px;
+    line-height: 100%;
+  }
+  
+
+}
+@media (max-width: 768px){
+  .cnt1{
+    display: contents;
+    padding:10px;
+    margin: 10px;
+    gap: 10px;
+
+  }
+  .container {
+    gap: 10px;
+    padding-top: 70px;
+    
+  }
+
+}
+.imgtitle{
+  font-family: "Inria Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-top: 3%;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease-in-out;
+}
+.imgtitle:hover {
+  color: rgb(34, 153, 84);
+  cursor: pointer;
+}
+.imgtyp{
+  font-family: "Inria Sans", serif;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(125, 125, 125);
+  padding: 1% 0;
+}
+@media (max-width:768px){
+  .imgtitle{
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .imgtyp{
+    font-size: 10px;
+    font-weight: 200;
+    padding-top: 0%;
+  }
+}
+.right{
+  padding-left: 50%;
+  padding-top: 10rem;
+  font-size: 1.7rem;
+}
+.container2{
+ border:2px solid #111;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgb(42, 18, 18)) ;
+  /* this is chat-gpt generated */
+  display: flex; 
+  flex-direction: column;
+  padding:40px 0;
+  height: 400px;
+  width: auto;
+  justify-content: center;
+  align-items: left;
+}
+.sunset{
+  justify-content: end;
+  text-align: left;
+  padding-left: 5%;
+  color: white;
+  font-family: "Red Hat Display", serif;
+}
+.sunsetp{
+  font-size: 1.2rem;
+  padding-left: 5%;
+  width: 50%;
+
+}
+
+.enddes{
+  font-size: 1.5rem;
+  padding:150px 20%;
+  text-align: center;
+  font-family: "Red Hat Display", serif;
+  /* font-weight: 10; */
+}
+
+.offers{
+    background-color: #020D02;
+    height: 280px;
+    width: 1444px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: left;
+    background-color: black;
+    font-family: "Red Hat Display", serif;
+}
+.offers div {
+    height: 168px;
+    width: 644px;
+    margin-left: 40px;
+}
+.offers h4{
+    font-size: 28px;
+    font-weight: 50;
+    font-size: 30px;
+   
+}
+.offers #skills{
+    height: 168px;
+    width: 644px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 50;
+    font-size: 30px;
+}
+.offers ul{
+    list-style-type: none;
+}
+.offers li{
+    font-size: 20px; 
+    padding: 12px; 
+}
+
+
+
+#testimonials > p{
+    margin-bottom: 48px;
+    font-family: Hepta Slab;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: center;
+    font-family: "Red Hat Display", serif;
+}
+
+.reviews{
+    overflow: scroll;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,288px);
+    column-gap: 24px;
+    
+}
+
+.review{
+    height: fit-content;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1.5px solid white;
+    
+}
+
+.review-header{
+    margin-bottom: 16px;
+    display: flex;
+    
+}
+
+.client-img{
+    margin: auto 12px auto 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.client-details{
+    margin: auto 0;
+}
+
+.client-name{
+  font-family: "Red Hat Display", serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+.client-designation{
+    
+   font-family: "Inria Sans", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    
+}
+
+.review-content{
+    margin-left: 24px;
+    padding-left: 36px;
+    
+    font-family: "Inria Sans", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(230, 216, 214, 1);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1.5px solid black;
+    padding: 96px 0;
+    gap: 48px;
+}
+
+    .footer-title > h1{
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .subscription {
+        display: flex;
+        gap: 12px;
+    }
+
+        #email-input {
+            border-radius: 8px;
+            padding: 8px 16px;
+            background-color: rgba(224, 184, 224, 0.12);
+            gap: 8px;
+            border: rgba(255, 255, 255, 0);
+            
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(235, 209, 235, 0.4);
+        }
+
+        #subscribe {
+            border-radius: 8px;
+            padding: 12px 24px;
+            background-color: rgba(255, 0, 255, 1);
+            border: 0;
+            
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(255, 254, 255, 1);
+        }
+
+        #subscribe:hover {
+            cursor: pointer;
+            line-height: 40px;
+            font-size: 30px;
+            background-color: rgb(204, 0, 204);
+            transition: 0.3s ease;
+        }
+
+    .social-icons {
+        display: flex;
+        gap: 32px;
+    }
+
+        .icons {
+            height: 48px;
+            width: 48px;
+        }
+
+        .icons:hover {
+            cursor: pointer;
+            /* height: 58px; */
+            /* width: 58px; */
+            transition: 0.3s ease;
+            transform: scale(1.3);
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">VAPORWAVE</div>
+        <ul>
+          <li a href="#home">Home</li>
+          <li a href="#Projects">Projects</li>
+          <li a href="#About">About</li>
+          <li a href="#Contact">Contact</li>
+        </ul>
+      </nav>
+      <main id="home">
+        <section class="title">Enter My World</section>
+        <div>
+          <img id="bimg" src="1.png" />
+        </div>
+        <div class="container">
+          <div class="cnt1">
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/5db1/13eb/60f0761595b039c82cc11e47e2ecaf5a?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EL71E7PRYh5zwBUxqvp-kSQah~h8sy2VAUsHbf5K6FJdDYsoBNG0S4AsUcEDi3DkOaaEI2MkaNfwkjJ~3pgrOazrDt44B71oCN8dTK1z1yG6u2yG3Alvt6hiyvFVYLHczkCk6oLS5p-QFb7R2JSHi5~-BZ5VNCR~~6oyPoXimObCPAhnF1hxB82rmMMecGSOnIwm75DsI3IwnRnIwPY5efiM8Ci5ulV2Ib-ADZhX6aQPVz0en7J7~tkorcg7NLY9viPkxPS~rTaYHOGvBCi3YQ2UtO2CSKHqrYv5mIwG7ENmD1uly7znDgZP-GNOrHrjtdQDKkNGq9KDYGhcNakNcw__" />
+              <div class="imgtitle">Project Neon</div>
+              <div class="imgtyp">Web Design</div>
+            </div>
+            <div class="child">
+              <img src="https://www.figma.com/file/q0XKycJ7venEt8cLJSsqmj/image/1f0be68ca2c40f9c623c73a863e3b61cea75bc70" />
+              <div class="imgtitle">Mountain Tranquility</div>
+              <div class="imgtyp">Illustration</div>
+            </div>
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/618e/3be4/8dcb17fed46eeb5bf2e9d63bab23d4b6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHZtse7N3TIh17ZB0DvIdRy0wFyyzdVggvEg5HI~8h05uRqOB9c8kqgmpdMZ~bKG3ZKziH0skHHd5WSXuRKmOEfzOoQ829Nm3eCzU4CMCuHN-4emUPmZOZp2qc0aeZTFh2ibvajwXS~Vd-3-kCjKjm5TecWTpNc8ifNrJSSgX~oms5U35LN6wKWaxx9EaYx7LfGoSLrL626D6hT42Z2b6rxZUYml~jv493uOEXaD~BxQPdRavy8bcqi8hpfjrxyk2HbIjanZmsxfdC3W7Nxch5sljFdR12-I9UmCPU~GlGo62-x~uefLtqncn~6d0d3SKYiB9xwI4Y4yWKNISJ6r-Q__" />
+              <div class="imgtitle">Ocean Calm</div>
+              <div class="imgtyp">Painting</div>
+            </div>
+          </div>
+          <div class="cnt1">
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/bae2/bbc5/7f635c32011899541884fc0a8363fe97?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mupCuOeZDGbTgc89KZNIwOIi2Gyf~Wf0I1U2xOVkQZ3Np3d~TUiCKvni7CcuqkUmEO7stMdHmA3sxpc6eA~5-loWC4dF2kKj~Z7H2-NNqopAWfQBA-FYKYNL7~aFlX4gsSEwP2h8lI9stDiTWSf7xi77NY8MXu0y0~CdfUXEfVz6ym371h42T1Dx2GRwE99-36LjFZfKxjXkX6zr4NjehZr~7VHI2hRpiLlRgRNVexpbVJbT7UOPQhlp1mcXOOj0tQ-CcuuoKBejasgcKZVSIUoDnGfLyGLzJdoKpFJZAn9dtzAkEQI2GmdfaZcenPsYEIJHPxjQz5FkBUpnBKFPRQ__" />
+              <div class="imgtitle">Desert Peace</div>
+              <div class="imgtyp">Photography</div>
+            </div>
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/37a6/5711/ee7d4bb4078657138e261529f80a4d43?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IANi6xlLdG7b1WqnVVeGQQLyFA0eArCvE0ZILT9hX02F7FJpJNoMykeNYnr8szk4h0GUq2YXf1fJZZXjZEKFCtygoikhTPKio7NYi7Ev2QEKUhB8FPHU-4FnJPkBtH0JGuEU1cRW7EudfyMCm2Ibh3loo-mYiLUkEw61TC4HOvNUhdaJogESyBkMq4PzdpzIMuubxBOvtdQ1CQcbaLKsaZGnlyBB-blZDhdJfTNGPKikbIRlV4qPXOHYHSErJi1LBwgzrzTNDzEKVAlfYxOQ9dV6WwK6UHVXZZtJbf4XrKyr34pKb~4dJ0XHLQgpMuJhibm5AIfExEScFgK4weVROg__" />
+              <div class="imgtitle">River Flow</div>
+              <div class="imgtyp">Digital Art</div>
+            </div>
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/6548/f830/dcf0e08d86049f7e498e70df6ba76ff0?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qnPzru1jp2c0F58sCc~LeWxMGmgcdDObiPb51H76cTSG2888XCX2ZMYqVxKfqTBTbv5kaK--T-17by7KQehsC0HnuPcqkKyumJ6PS36b81BoLRH9O0EqnWPzwxQizuf3vSPnh8ELy1qVdnybBftflkfpnBhuVmYSSh8VizQ9M4eybPhDf0wRxaLSjT6f9-jyQ~wIR9vF-wnwSdtTdDnjR2sukKPkVE7E6sjSiC4BdzKslZn7c4kOrdiTCZUHxH0XjtWwGE-wnqsGl5uagVDULGs~TZakp9GeGUWbVpT0Q8l7MmmnaCdLUY~w~nN4GYcTQj2QQFKEJPuxCwu6cR19-A__" />
+              <div class="imgtitle">Leaf Whisper</div>
+              <div class="imgtyp">Photography</div>
+            </div>
+          </div>
+          <div class="cnt1">
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/97e1/093d/8f2adbf47a90d73a4041391ca42c9286?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BtInwQfmgX-g2rARX7nV~i0ZNIJC~K9-rKvPYXC5QYJvUE2a3KK2Z8bbk2OSi8Koj-KptHT04-5qlsljQX343dogBXw0yctw205xPejbc3Vc2YFaJ81uYd~RiYuKWdNx5ZN6HBnzscltOSbs3dnMe9-Xv-LADm6uIzW3VjHAu~u3b3Bqs2u47WIFftCrPrA3Z3mN9SOw1A7~B9euM9H3fiziilnWv1OT3KkT7tfxKInvqzW~YGsYuZubzyDWNlFsL411DuydRfU5hdfIirh9yFgB9k5CJsAlodq04S6jIWt1hdsYM6Lkc-0OPefH8TEtBkijs9pKdxuRSkKlR7hAyQ__" />
+              <div class="imgtitle">Sunset Glow</div>
+              <div class="imgtyp">Illustration</div>
+            </div>
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/ed4c/963b/7bde07dba9674d0514761a2ef411c4ac?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GJNV9L3fERBchfxtIuuBFMmtKbHbIzufndF0QXjbQIP-zfvU3AkH6Z5uemWiPSeqgCMv5AXUnpCJCRbykV2rhS2FdPA4deHdNRXzgkLMWVuxnpW~CH3HBbEBBgLfxgpKdu-5GYqT-gJpwjNDzti2QM6gJw3UV81VxyMHQaNLQMnwDrLOK6UMIer7VCsGikLsAjAqmR7kViIUIrxN5x2BBnWQUIA7rjLCmO5NgroY0dVEoPrfmVZb6bQX-KOsx4zwx~7Ec821KgJwiZwwnVe6FGj1dPZJpxXqnqD8tbVbovKFrmh6mxCraUP5bCFAokN1rDq7uhjldZVaYhxxB0-7Qg__" />
+              <div class="imgtitle">Rainforest Echo</div>
+              <div class="imgtyp">Painting</div>
+            </div>
+            <div class="child">
+              <img src="https://s3-alpha-sig.figma.com/img/99d5/2c93/fc41845fb7000456add31ac3336d4b85?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NGD8UoQJnmR0UJJIJa5hr773LZvcL3wfXCDYHot3JmOsD~URnEg8nSkftJ6emEu3LpkZfYui~j1fkST5a5tgUBUKQNy0JGQ~bL3PaVajgG4tP6z4hHRxxLuYcUg~fXvmsAw32rIELaNR4diuxJklQ06itJWIqqMnXVFQTAC5kHKk~5INaq7hBj92Spn55NkQwH1-bN-AnD~FlnWSDmqWHGyy4CybA9OTQYBDoqt-eLxRBnz~YBTnCuisNWxT7OxuGbAdfUD0WSvuyQ0OQOZh9tTZH2ulV-v9tjp0Jdaj0YM0gbr9KdBkvcGCKkr4Mn6g3HEUUoLD-yDatYZsSq73QA__" />
+              <div class="imgtitle">Meadow Bliss</div>
+              <div class="imgtyp">Digital Art</div>
+            </div>
+          </div>
+        </div>
+        <div class="des">
+          <div class="left"></div>
+          <div class="right">Welcome to my portfolio. Dive into a world where retro- futurism meets digital art. Explore my projects that blend neon colors, glitch effects, and nostalgic vibes.</div>
+
+        </div>
+
+        <div class="container2">
+          <h1 class="sunset">Surreal Sunset</h1>
+          <div class="sunsetp">Check out my latest project surreal a,mesmerizing blend of neon <br>color and digital art</div>
+       </div>
+
+       <div class="description">
+        <div class="enddes">
+            <h1>I'm a digital artist inspired by the aesthetics of the 80s and 90s. My work combines vibrant neon colors with glitchy, retro-futuristic visuals.</h1>
+        </div>
+      </div>
+
+    <div class="offers">
+      <div>
+          <h4 id="offer">Services</h4>
+      </div>
+      <div id="skills">
+          <ul>
+              <li>Web Design</li>
+              <li>Animation</li>
+              <li>Photography</li>
+              <li>UI/UX</li>
+          </ul>
+          <ul>
+              <li>Graphic Design</li>
+              <li>Illustration</li>
+              <li>Branding</li>
+              <li>Video Production</li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="testimonials">
+      <p>What Clients Say</p>
+      <div class="reviews">
+          <div class="review">
+              <div class="review-header">
+                  <img src="https://s3-alpha-sig.figma.com/img/1ef6/0422/b34f8c3046855ca7e109298ea9d3658d?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RBscEFKZqjuHZV-hBYPaZzb2whXYtpif0-7JS5vn~gSNIpwoBt5VjdJBKknnbWqXmJUNV8kvjqL8N08s8uRwImYo7eR-zOlC4~1ukBebIBRMRhZk6qm~lOpockDbCZpt2Bj0qi3PsO4ad6ZVYasKvqBZ3mCmcNwcgqqaGON2xyChhGNRP8pXryXpkXBvsOQnGGyCUqu4OndHVoGRo3w~xDHg1mPA~v9mhiGC9YTyxFIIJrntD~tPPI4MBfhpNZVn~ngrVS6mDdzGQsWCWsLDQYJUbJsJM5-ZK8b0hOs75Z7tSqZXSEVID0fkmhpDUf4P2vl-AGR2XTs1bRx~N~187g__" alt="" class="client-img">
+                  <div class="client-details">
+                      <p class="client-name">Clara Bell</p>
+                      <p class="client-designation">CEO, Creative Co.</p>
+                  </div>
+              </div>
+              <div class="review-content">Fantastic work! Highly recommend.</div>
+          </div>
+          <div class="review">
+              <div class="review-header">
+                  <img src="https://s3-alpha-sig.figma.com/img/ede4/50df/86fe1035cebfc4ae14e254618d382e6a?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AoG7EQooy4vvjjxGSvB6SrOO94zMcI1wzFh7AAOeqxaCP06khOP6R5EMs7gsB9hXAOFHyUhMaPV1fYvEowr1ajRbg1jsoyZBPziT1TclYWUPA-Ti7qsMEggnebgBRk5rJvrEygEW5sjwyx3nqVPNZulXDyaJqnsrtVk~judoWKEf9HHvOcSM7X2lGL2xBQIrfcEALd3-tMmwVqQbDZoRoI1aEFbJJ~sQqc2sCbj3S0CeNzul3ZgjTU7bJsfmc7YfvKE1AHKu7toQI3xXbXepsLuf1ccuq4h9FR3fDZuYd0DCFdKNwqbEK3nHBSutGaxhg2OAsaiFr2BwpcI~smmJxg__" alt="" class="client-img">
+                  <div class="client-details">
+                      <p class="client-name">David Green</p>
+                      <p class="client-designation">Marketing Director, Innovate Inc.</p>
+                  </div>
+              </div>
+              <div class="review-content">Delivered beyond expectations.</div>
+          </div>
+          <div class="review">
+              <div class="review-header">
+                  <img src="https://s3-alpha-sig.figma.com/img/3160/8311/d2ffd6f77b95a7aae5c18053d85f6764?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTaiNV0gJr2maC0WXET76mzs7pzeG~zp6Pdd5aNMgI9QmU6Jd6mlY9dFvut1flNbSw5tlTlFPxQrDTHWKQVFrHkKP~r7Xcz~Sj8t4gKOhjxbzdbTN5OoVkpdTgGo33ZjRQiubJSVLTzi7TfERXfK9qEJ2wsgtrcYbCv6sUq4uQ1pQLLaKVBdMLwIDJhUIBfUS1-X1ERkXXsYLoHrxWnRiAQU~rTq33m6AM5DigGkYgtLFZNqhkhpifTt9cKMxhLIKil6UxiCNluzjjnEF7oS-pEIIM-Bn7S9SvNlScpwh3BBv7bOx4p2c-vIsWJ~hW~lEznDpKw1VPYRm96mK3JeBQ__" alt="" class="client-img">
+                  <div class="client-details">
+                      <p class="client-name">Evelyn Hart</p>
+                      <p class="client-designation">Founder, Artistry Studio</p>
+                  </div>
+              </div>
+              <div class="review-content">A true professional and talented designer.</div>
+          </div>
+          <div class="review">
+              <div class="review-header">
+                  <img src="https://s3-alpha-sig.figma.com/img/8916/261d/2528a6fc18a79618ddeac4b7f9e0eaeb?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LQYhLOr4qSLQ5MU1ge6kO6DcI5-ITBcJbQpoe8s-5S6F3XxPGjJL6O7hbqvgisOWumrnLRiKFQa6z93vLQpCtRehZ9bxq5kAIwitNak8fL-EHvXBktdypUP7K-82j14wbVikP~icLLewnQzIZEJjkLy572SM9BDND8W5bVPgjIVj7wN-cwdkcmw6gARYpCcdaI2~VPy7qZxW88xkTTw~q1EclBmA~ZXWdivH3tar8rI95UvI29NUy4A69xATOs3Dlat636xlSK2fGD9DDxRFZUkMOLnQULzRvgQDcykeObX~83HQuVIw50NuDkaS~VqlL15EIcuyOMGWfwko9A~iJg__" alt="" class="client-img">
+                  <div class="client-details">
+                      <p class="client-name">Franklin Lee</p>
+                      <p class="client-designation">Project Manager, Design Hub</p>
+                  </div>
+              </div>
+              <div class="review-content">Creative and reliable. A pleasure to work with.</div>
+          </div>
+          <div class="review">
+              <div class="review-header">
+                  <img src="https://s3-alpha-sig.figma.com/img/7a8e/45ae/e8dd6cdea5962cf6804be87bd55ef552?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RIOkb6JouhdtX3krHU9wnfqyqlZW6BAN-XfEhSa9TfnCKlWKDUsKo94Egv7UtYM-JQ~W3FWwzFY7tukod-~buqg7Awjr~nrNUSc4kesvzbmAVkMiWtTUx9ZIzcYSClS8SC1RhDUjLi2JrNpelogaDDGprJnuuYPURTHYa22F1O7Y9dn5IfG7LxwOV7Yed~S9UjUVe4g35CaVpOKMA5GcqvUvftmHMZiqsM4jI6rkWyID9i1CVpqmQgM-2gtyS9eHzvtbCAEM1JBJKFQAKnMScpBUxwt2uLkhvBHRKPOrBgns-Zt0bxbXQaT-G4x6KGnz2so2D3a-AdYs1FN6nm6X7A__" alt="" class="client-img">
+                  <div class="client-details">
+                      <p class="client-name">Grace Kim</p>
+                      <p class="client-designation">Owner, Graceful Designs</p>
+                  </div>
+              </div>
+              <div class="review-content">Exceptional quality and attention to detail.</div>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-title">
+        <h1>Stay Connected</h1>
+    </div>
+    <div class="subscription">
+        <input type="email" placeholder="Enter your email" id="email-input" value="Enter your email">
+        <input type="button" value="Subscribe" id="subscribe">
+    </div>
+    <div class="social-icons">
+        <img class="icons" src="facebook-logo-vector.png" alt="facebook">
+        <img class="icons" src="instagram-logo-vector.png" alt="instagram">
+        <img class="icons" src="x-logo-vector.png" alt="x">
+    </div>
+</div>
+
+  
+      </main>
+    </header>
+  </body>
+</html>
